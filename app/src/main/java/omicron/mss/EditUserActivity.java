@@ -76,4 +76,10 @@ public class EditUserActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    //called when user clicks Edit User
+    public void moveChangePassword(View view) {
+        Intent change = new Intent(this, ChangePasswordActivity.class);
+        startActivity(change);
+    }
 }

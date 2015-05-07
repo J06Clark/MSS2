@@ -16,17 +16,19 @@
         android:text="Add Blocked Time"
         android:editable="false"
         android:id="@+id/addBlockedTitle"
-        android:textSize="32sp"
+        android:textSize="25sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="25dp"
+        android:textColor="#7588ed"
+        android:textStyle="bold" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Monday"
         android:id="@+id/mondayCheckBox"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:textSize="17sp"
         android:clickable="true"
         android:layout_below="@+id/addBlockedTitle"
@@ -38,7 +40,7 @@
         android:layout_height="wrap_content"
         android:text="Tuesday"
         android:id="@+id/tuesdayCheckBox"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:textSize="17sp"
         android:clickable="true"
         android:layout_below="@+id/addBlockedTitle"
@@ -98,7 +100,7 @@
         android:layout_height="wrap_content"
         android:text="Done"
         android:id="@+id/addBlockedDoneButton"
-        android:background="#F47424"
+        android:background="@drawable/button_grey"
         android:layout_below="@+id/endTimeText"
         android:layout_alignEnd="@id/endTimeText"
         android:layout_marginTop="50dp" />
@@ -110,9 +112,10 @@
         android:id="@+id/addBlockedBackButton"
         android:onClick="backToCreate"
         android:layout_alignStart="@+id/endTimeText"
-        android:background="#F47F24"
+        android:background="@drawable/button_grey"
         android:layout_below="@+id/endTimeText"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:clickable="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -124,11 +127,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="@string/start_time"
-        android:textColor="#ffffff"
+        android:textColor="#FF7B797B"
         android:gravity="center_vertical|center_horizontal"
-        android:background="#aba3a3a3"
+        android:background="@drawable/text_box2"
         android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp" />
+        android:layout_marginRight="35dp"
+        android:textSize="15sp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -140,11 +144,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:text="@string/end_time"
-        android:textColor="#ffffff"
+        android:textColor="#FF7B797B"
         android:textAlignment="center"
         android:gravity="center_vertical|center_horizontal"
-        android:background="#aba3a3a3"
+        android:background="@drawable/text_box2"
         android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp" />
+        android:layout_marginRight="35dp"
+        android:textSize="15sp" />
 
 </RelativeLayout>

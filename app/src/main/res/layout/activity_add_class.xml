@@ -12,10 +12,12 @@
         android:text="Add Class"
         android:editable="false"
         android:id="@+id/addClassTitle"
-        android:textSize="32sp"
+        android:textSize="25dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="#7588eb" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,17 +31,19 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="45dp"
         android:id="@+id/departmentEditText"
         android:layout_below="@+id/departmentTitle"
         android:layout_centerHorizontal="true"
         android:inputType="text"
         android:layout_marginLeft="75dp"
         android:layout_marginRight="75dp"
-        android:background="#aba3a3a3"
+        android:background="@drawable/text_box2"
         android:hint="ex: CSE"
         android:capitalize="characters"
-        android:gravity="center_vertical|center_horizontal" />
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="15sp"
+        android:textColorHint="#FF7B797B" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,7 +57,7 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:inputType="number"
         android:ems="10"
         android:id="@+id/classNumberEditText"
@@ -61,21 +65,25 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="75dp"
         android:layout_marginRight="75dp"
-        android:background="#aba3a3a3"
+        android:background="@drawable/text_box2"
         android:hint="ex: 3310"
-        android:gravity="center_vertical|center_horizontal" />
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="15sp"
+        android:textColorHint="#FF7B797B" />
 
     <Button
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:text="Add Class"
        android:id="@+id/addClassButton"
-       android:background="#F47F24"
-       android:layout_marginBottom="150dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/classNumberEditText"
-        android:layout_alignStart="@+id/classNumberEditText"
-        android:onClick="searchForClass" />
+       android:background="@drawable/button_grey"
+        android:onClick="searchForClass"
+        android:clickable="true"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/classNumberEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="35dp" />
 
    <Button
        android:layout_width="wrap_content"
@@ -83,10 +91,11 @@
        android:text="Back"
        android:onClick="backToCreate"
        android:id="@+id/addClassBackButton"
-       android:background="#F27F24"
-       android:layout_alignBaseline="@+id/addClassButton"
-       android:layout_alignBottom="@+id/addClassButton"
-       android:layout_alignRight="@+id/classNumberEditText"
-       android:layout_alignEnd="@+id/classNumberEditText" />
+       android:background="@drawable/button_grey"
+       android:clickable="true"
+       android:layout_alignTop="@+id/addClassButton"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:layout_marginLeft="35dp" />
 
 </RelativeLayout>

@@ -61,6 +61,10 @@
             android:label="@string/title_activity_select_class" >
         </activity>
         <activity
+            android:name=".ChangePasswordActivity"
+            android:label="@string/title_activity_change_class" >
+        </activity>
+        <activity
             android:name=".ScheduleScreenActivity"
             android:label="@string/title_activity_schedule_screen" >
         </activity>

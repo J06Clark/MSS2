@@ -19,7 +19,7 @@
         android:layout_alignParentTop="true"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp" />
+        android:textSize="25dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -81,7 +81,8 @@
         android:layout_alignRight="@+id/confirmPasswordRegisterEditText"
         android:layout_alignEnd="@+id/confirmPasswordRegisterEditText"
         android:layout_below="@+id/emailRegisterEditText"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="15dp"
+        android:clickable="true" />
 
     <EditText
         android:layout_width="match_parent"
